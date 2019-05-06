@@ -1,4 +1,5 @@
 ---
 - hosts: webserver
+  become: true
   roles:
     - ngnix
