@@ -1,0 +1,12 @@
+#Inventory sample
+
+[webserver]
+webserver1 ansible_host=10.0.0.1
+webserver2 ansible_host=10.0.0.2
+
+[database]
+database1 ansible_host=10.0.0.3
+
+[dev]
+webserver1
+database1
