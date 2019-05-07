@@ -1,14 +1,12 @@
 ---
 - name: Update apt cache
   apt: update_cache=yes cache_valid_time=3600
-
 - name: Install required software
-  apt: name={{ item }} state=present
-  with_items:
+  apt: name="{{ packages }}" state=present
+  vars:
+    packages:
     - python-mysqldb
-    - mysql-server
-    - cifs-utils
-
+    - mysql-server 
 - name: Create mysql user
   mysql_user: 
     name={{ mysql_user }} 

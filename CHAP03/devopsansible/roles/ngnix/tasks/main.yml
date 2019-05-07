@@ -1,4 +1,5 @@
 - name: install and check nginx latest version
-    apt: name=nginx state=latest
+  apt: name=nginx state=latest
 - name: start nginx
-    service: name=nginx state=started
+  service: name=nginx state=started
+
