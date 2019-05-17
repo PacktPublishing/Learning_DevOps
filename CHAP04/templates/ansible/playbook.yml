@@ -1,0 +1,7 @@
+---
+- hosts: all
+  become: true
+  become_user: packer
+  become_method: sudo
+  roles:
+    - ngnix
