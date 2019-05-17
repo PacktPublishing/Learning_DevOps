@@ -24,6 +24,7 @@
       "managed_image_name": "{{user `image_name`}}-{{user `image_version`}}",
   
       "os_type": "Linux",
+      "ssh_username":"demo",
       "image_publisher": "Canonical",
       "image_offer": "UbuntuServer",
       "image_sku": "16.04-LTS",
@@ -39,7 +40,7 @@
         {
           "type": "ansible",
           "playbook_file": "ansible/playbook.yml",
-          "user": "packer",
+          "user": "demo",
           "extra_arguments": [ "--become" ]
         }
       ]
