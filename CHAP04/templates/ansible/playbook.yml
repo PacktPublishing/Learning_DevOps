@@ -1,7 +1,9 @@
 ---
-- hosts: all
+- hosts: 127.0.0.1
   become: true
-  become_user: demo
-  become_method: sudo
-  roles:
-    - ngnix
+  connection: local
+  tasks:
+  - name: install and check nginx latest version
+    apt: name=nginx state=latest
+  - name: start nginx
+    service: name=nginx state=started

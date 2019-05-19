@@ -1,5 +1,6 @@
+- pause: minutes=1
 - name: install and check nginx latest version
-  become: yes
+  become_user: demo-book
   apt: name=nginx state=latest
 - name: start nginx
   become: yes
