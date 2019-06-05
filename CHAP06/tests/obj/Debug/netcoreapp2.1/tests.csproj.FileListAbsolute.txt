@@ -1,0 +1,14 @@
+D:\DevOps\Learning_DevOps\CHAP06\tests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+D:\DevOps\Learning_DevOps\CHAP06\tests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+D:\DevOps\Learning_DevOps\CHAP06\tests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+D:\DevOps\Learning_DevOps\CHAP06\tests\bin\Debug\netcoreapp2.1\tests.deps.json
+D:\DevOps\Learning_DevOps\CHAP06\tests\bin\Debug\netcoreapp2.1\tests.runtimeconfig.json
+D:\DevOps\Learning_DevOps\CHAP06\tests\bin\Debug\netcoreapp2.1\tests.runtimeconfig.dev.json
+D:\DevOps\Learning_DevOps\CHAP06\tests\bin\Debug\netcoreapp2.1\tests.dll
+D:\DevOps\Learning_DevOps\CHAP06\tests\bin\Debug\netcoreapp2.1\tests.pdb
+D:\DevOps\Learning_DevOps\CHAP06\tests\obj\Debug\netcoreapp2.1\tests.csprojAssemblyReference.cache
+D:\DevOps\Learning_DevOps\CHAP06\tests\obj\Debug\netcoreapp2.1\tests.csproj.CoreCompileInputs.cache
+D:\DevOps\Learning_DevOps\CHAP06\tests\obj\Debug\netcoreapp2.1\tests.AssemblyInfoInputs.cache
+D:\DevOps\Learning_DevOps\CHAP06\tests\obj\Debug\netcoreapp2.1\tests.AssemblyInfo.cs
+D:\DevOps\Learning_DevOps\CHAP06\tests\obj\Debug\netcoreapp2.1\tests.dll
+D:\DevOps\Learning_DevOps\CHAP06\tests\obj\Debug\netcoreapp2.1\tests.pdb
