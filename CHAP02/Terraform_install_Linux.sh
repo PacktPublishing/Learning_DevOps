@@ -1,4 +1,4 @@
-TERRAFORM_VERSION="0.11.13"
+TERRAFORM_VERSION="0.11.14"
 
 curl -Os https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_linux_amd64.zip \
 && curl -Os https://releases.hashicorp.com/terraform/${TERRAFORM_VERSION}/terraform_${TERRAFORM_VERSION}_SHA256SUMS \
