@@ -1,0 +1,21 @@
+image: microsoft/dotnet:latest
+
+stages:
+    - build
+    - test
+
+variables:
+    BuildConfiguration: "Release"
+
+build:
+    stage: build
+    script:
+        - "cd app"
+        - "dotnet restore"
+        - "dotnet build --configuration $BuildConfiguration"
+
+test:
+    stage: test
+    script: 
+        - "cd tests"
+        - "dotnet test --configuration $BuildConfiguration"
