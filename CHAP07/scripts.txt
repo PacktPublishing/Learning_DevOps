@@ -1,0 +1,12 @@
+
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+docker rmi $(docker images -q)
+
+docker build -t demobook:v1 .
+
+docker run -d --name mudemoapp -p 8080:80 demobook:v1
+
+http://localhost:8080
+
+https://www.codementor.io/aviaryan/writing-your-first-dockerfile-7e0rjhual
