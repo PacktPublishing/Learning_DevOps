@@ -15,6 +15,6 @@ spec:
     spec:
       containers:
       - name: demobookk8s
-        image: mikaelkrief/demobook:1.0.13
+        image: mikaelkrief/demobook:latest
         ports:
         - containerPort: 80
