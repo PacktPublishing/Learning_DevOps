@@ -1,0 +1,81 @@
+{
+	"info": {
+		"_postman_id": "b36bc0ce-980f-425e-b9c9-aea0dfc534f2",
+		"name": "DemoBook",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://dummy.restapiexample.com/api/v1/employees",
+					"protocol": "http",
+					"host": [
+						"dummy",
+						"restapiexample",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get a single employee data",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "3db73696-2184-4985-aed1-f856ab135d06",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"",
+							"pm.test(\"Response time is less than 400ms\", function () {",
+							"    pm.expect(pm.response.responseTime).to.be.below(400);",
+							"});",
+							"",
+							"pm.test(\"Json response is not empty\", function (){",
+							"    pm.expect(pm.response).to.be.json;",
+							"});",
+							"",
+							"pm.test(\"Json response employee_age eq 78\", function (){",
+							"    var jsonRes = pm.response.json();",
+							"    pm.expect(jsonRes.employee_age).to.eq(\"78\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://dummy.restapiexample.com/api/v1/employee/{{EmployeeID}}",
+					"protocol": "http",
+					"host": [
+						"dummy",
+						"restapiexample",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"employee",
+						"{{EmployeeID}}"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

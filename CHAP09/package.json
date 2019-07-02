@@ -1,0 +1,12 @@
+{
+  "name": "postman",
+  "version": "1.0.0",
+  "description": "postmanrestapi",
+  "scripts": {
+    "testapilocal": "newman run DemoBook.postman_collection.json -e Local.postman_environment.json",
+    "testapiQA": "newman run DemoBook.postman_collection.json -e QA.postman_environment.json"
+  },
+  "devDependencies": {
+    "newman": "^4.5.1"
+  }
+}
