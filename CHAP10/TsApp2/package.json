@@ -4,7 +4,7 @@
   "description": "",
   "main": "src/Calculator.ts",
   "scripts": {
-    "build": "tsc -p .",
+    "build": "tsc --outdir lib -p .",
     "test": "jest --coverage"
   },
   "author": "",
