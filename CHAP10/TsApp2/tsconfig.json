@@ -5,6 +5,7 @@
         "target": "es5",
         "sourceMap": true,
         "moduleResolution": "node",
+        "outDir": "lib/",
         "skipLibCheck": true,
         "allowSyntheticDefaultImports": true
     },
