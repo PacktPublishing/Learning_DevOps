@@ -10,7 +10,7 @@
     },
     "files": [
       "./src/Calculator.ts",
-      "tests/Calculator.Test.ts"
+      "./tests/Calculator.Test.ts"
     ],
 
     "exclude": [
