@@ -26,7 +26,7 @@
       "image_offer": "UbuntuServer",
       "image_sku": "18.04-LTS",
       "location": "West Europe",
-      "vm_size": "Standard_DS2v3",
+      "vm_size": "Standard_DS2_v2",
       "azure_tags": {
           "version": "{{user `image_version`}}",
           "role": "WebServer"
