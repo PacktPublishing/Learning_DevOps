@@ -16,7 +16,7 @@ namespace appFeatureFlags.Controllers
         }
         public IActionResult Index()
         {
-            return View(new HomeModel{ShowboxHome = this.showboxHome.Value});
+            return View(new HomeModel{ShowBoxHome = this.showboxHome.Value});
         }
 
         public IActionResult Privacy()
