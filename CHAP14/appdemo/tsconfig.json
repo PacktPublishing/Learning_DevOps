@@ -1,0 +1,19 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "declaration": true,
+        "target": "es5",
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "skipLibCheck": true,
+        "allowSyntheticDefaultImports": true
+    },
+    "files": [
+      "./src/Calculator.ts",
+      "./tests/Calculator.Test.ts"
+    ],
+
+    "exclude": [
+        "node_modules"
+    ]
+  }

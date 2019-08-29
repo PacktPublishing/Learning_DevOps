@@ -1,0 +1,20 @@
+{
+  "name": "demobook",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/Calculator.ts",
+  "scripts": {
+    "build": "tsc -p .",
+    "test": "jest --coverage"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^24.0.15",
+    "jest": "^24.8.0",
+    "jest-sonar-reporter": "^2.0.0",
+    "sonarqube-scanner": "^2.5.0",
+    "ts-jest": "^23.0.1",
+    "typescript": "^3.5.3"
+  }
+}
