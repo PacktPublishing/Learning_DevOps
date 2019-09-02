@@ -1,11 +1,9 @@
 language: node_js
-jobs:
-  include:
-    - stage: "Build"
-    - name: "install" 
-      script: cd ./CHAP14/appdemo/ && npm install
-      name: "Build" 
-      script: cd ./CHAP14/appdemo/ && npm run build
-    - stage: "TEST" 
-      name: "Integration Tests"
-      script:  cd ./CHAP14/appdemo/ && npm run test
+node_js:
+  - "7"
+install:
+  - cd ./CHAP14/appdemo/
+  - npm install
+script:
+  - npm run build
+  - npm run test
