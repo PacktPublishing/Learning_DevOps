@@ -3,9 +3,14 @@ jobs:
   build:
     docker:
       - image: circleci/node:7.10
-    working_directory: ~/CHAP14/appdemo
     steps:
       - checkout
-      - run: npm install
-      - run: npm run build
-      - run: npm run test
+      - run:
+          name: Install npm packages
+          command: cd CHAP14/appdemo && npm install
+      - run: 
+          name: Run npm build
+          command: cd CHAP14/appdemo && npm run build
+      - run: 
+          name: Execute tests
+          command: cd CHAP14/appdemo && npm run test
