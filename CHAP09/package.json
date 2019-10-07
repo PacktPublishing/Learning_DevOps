@@ -5,7 +5,7 @@
   "scripts": {
     "testapilocal": "newman run DemoBook.postman_collection.json -e Local.postman_environment.json -r junit,cli --reporter-junit-export result-tests-local.xml",
     "testapiQA": "newman run DemoBook.postman_collection.json -e QA.postman_environment.json -r junit,cli --reporter-junit-export result-tests-qa.xml",
-    "testapilocalerror": "newman run DemoBook.postman_collection.json -e Local.postman_environment.json -r junit,cli --reporter-junit-export result-tests-local.xml"
+    "testapilocalerror": "newman run DemoBook.postman_collection_error.json -e Local.postman_environment.json -r junit,cli --reporter-junit-export result-tests-local.xml"
   },
   "devDependencies": {
     "newman": "^4.5.1"
