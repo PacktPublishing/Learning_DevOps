@@ -6,51 +6,50 @@
 	},
 	"item": [
 		{
-			"name": "Get all employee",
+			"name": "Get all posts",
 			"request": {
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://dummy.restapiexample.com/api/v1/employees",
-					"protocol": "http",
+					"raw": "https://jsonplaceholder.typicode.com/posts",
+					"protocol": "https",
 					"host": [
-						"dummy",
-						"restapiexample",
+						"jsonplaceholder",
+						"typicode",
 						"com"
 					],
 					"path": [
-						"api",
-						"v1",
-						"employees"
+						"posts"
 					]
 				}
 			},
 			"response": []
 		},
 		{
-			"name": "Get a single employee data",
+			"name": "Get a single post",
 			"event": [
 				{
 					"listen": "test",
 					"script": {
-						"id": "3db73696-2184-4985-aed1-f856ab135d06",
+						"id": "9d67003c-de79-4a4f-91f4-6b032b88fe34",
 						"exec": [
-							"pm.test(\"Status code is 200\", function () {",
-							"    pm.response.to.have.status(200);",
-							"});",
-							"",
-							"pm.test(\"Response time is less than 400ms\", function () {",
-							"    pm.expect(pm.response.responseTime).to.be.below(400);",
-							"});",
-							"",
-							"pm.test(\"Json response is not empty\", function (){",
-							"    pm.expect(pm.response).to.be.json;",
-							"});",
-							"",
-							"pm.test(\"Json response employee_age eq 78\", function (){",
-							"    var jsonRes = pm.response.json();",
-							"    pm.expect(jsonRes.employee_age).to.eq(\"78\");",
-							"});"
+							"pm.test(\"Status code is 200\", function () {\r",
+							" pm.response.to.have.status(200);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Response time is less than 400ms\", function () {\r",
+							" pm.expect(pm.response.responseTime).to.be.below(400);\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Json response is not empty\", function (){\r",
+							" pm.expect(pm.response).to.be.json;\r",
+							"});\r",
+							"\r",
+							"pm.test(\"Json response userId eq 1\", function (){\r",
+							" var jsonRes = pm.response.json();\r",
+							" pm.expect(jsonRes.userId).to.eq(1);\r",
+							"});\r",
+							""
 						],
 						"type": "text/javascript"
 					}
@@ -60,18 +59,16 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://dummy.restapiexample.com/api/v1/employee/{{EmployeeID}}",
-					"protocol": "http",
+					"raw": "https://jsonplaceholder.typicode.com/posts/{{PostID}}",
+					"protocol": "https",
 					"host": [
-						"dummy",
-						"restapiexample",
+						"jsonplaceholder",
+						"typicode",
 						"com"
 					],
 					"path": [
-						"api",
-						"v1",
-						"employee",
-						"{{EmployeeID}}"
+						"posts",
+						"{{PostID}}"
 					]
 				}
 			},
