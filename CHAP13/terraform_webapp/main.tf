@@ -1,5 +1,10 @@
 provider "azurerm" {}
 
+variable "package_zip_url" {
+  description = "url of the Zip package"
+}
+
+
 resource "azurerm_resource_group" "rg-app" {
   name     = "rgApp"
   location = "West Europe"
@@ -27,7 +32,7 @@ resource "azurerm_app_service" "webapp" {
   }
 
   app_settings = {
-    WEBSITE_RUN_FROM_PACKAGE = "0"
+    WEBSITE_RUN_FROM_PACKAGE = var.package_zip_url  #Url of the Zip package
   }
 
   lifecycle {
