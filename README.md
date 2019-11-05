@@ -64,7 +64,6 @@ We also provide a PDF file that has color images of the screenshots/diagrams use
 **Mikael Krief**
  lives in France and works as a DevOps engineer, and for 4 years he has worked as a DevOps consultant and DevOps technical officer at an expert consulting company in Microsoft technologies. He is passionate about DevOps culture and practices, ALM, and Agile methodologies. He loves to share his passion through various communities, such as the ALM | DevOps Rangers community, which he has been a member of since 2015. He also contributes to many open source projects, writes blogs and books, speaks at conferences, and publishes public tools such as extensions for Azure DevOps. For all his contributions and passion in this area, he has received the Microsoft© Most Valuable Professional (MVP) award for the last 4 years.
 
-## Other books by the authors
 ### Suggestions and Feedback
 [Click here](https://docs.google.com/forms/d/e/1FAIpQLSdy7dATC6QmEL81FIUuymZ0Wy9vH1jHkvpY57OiMeKGqib_Ow/viewform) if you have any feedback or suggestions.
 
