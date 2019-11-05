@@ -55,6 +55,12 @@ With the following software and hardware list you can run all code files present
 
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://static.packt-cdn.com/downloads/9781838642730_ColorImages.pdf).
 
+## Code in Action
+
+Click on the following link to see the Code in Action:
+
+[http://bit.ly/2ognLdt] (http://bit.ly/2ognLdt)
+
 ### Related products
 * Hands-On Security in DevOps  [[Packt]](https://www.packtpub.com/networking-and-servers/hands-security-devops?utm_source=github&utm_medium=repository&utm_campaign=9781788995504) [[Amazon]](https://www.amazon.com/dp/B07FNXVKCH)
 
